@@ -1,0 +1,503 @@
+body {
+
+    background-color: #f1f1f2;
+}
+
+/* 導覽區 */
+#navtop {
+
+    background-color: white;
+    box-shadow: 0 1px 3px 1px #e2dddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px;
+
+}
+
+/* 導覽文字連結 */
+.nav_list {
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+.out_navtoplist {
+    padding: 0 7px;
+}
+
+.in_navtoplist {
+    color: #d12229;
+    font-size: 16px;
+    font-weight: 1000;
+    /* border-bottom: red solid 2px; */
+    visibility: hidden;
+
+}
+
+.nav_list {
+    display: block;
+    padding: 20px 20px 5px 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.out_navtoplist:hover>.nav_list>.in_navtoplist {
+    visibility: visible;
+}
+
+/* ----------------按下去紅色線條動畫 */
+.nav_list {
+    margin: 0;
+    text-transform: uppercase;
+    /* 變大寫 */
+}
+
+.nav_list:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #d12229;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.nav_list:hover:after {
+    transform: scaleX(1);
+}
+
+/* <h1 class="fromCenter">Expand from center</h1 */
+/* -------------按下去紅色線條動畫 */
+
+/* 導覽logo */
+#img_logo {
+    width: 200px;
+}
+
+/* 搜尋區 */
+.input_search,
+.btn_search {
+    border: none;
+    background-color: #e2dddd;
+    padding: 5px 10px;
+}
+
+.input_search:focus,
+.btn_search:focus {
+    outline: none;
+}
+
+.input_search {
+    border-radius: 20px 0 0 20px;
+    width: 140px;
+}
+
+.btn_search {
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.nav_dropdown p {
+    text-align: center;
+}
+
+/* 搜尋區 */
+/* /導覽區 */
+
+/* 大圖片 */
+.products_Culinary_img {
+    width: 100vw;
+    padding-top: 122px;
+}
+
+/* /大圖片 */
+/* 詢價車 */
+#shopping_cart {
+    font-size: 40px;
+    background-color: #d12229;
+    color: white;
+    position: sticky;
+    top: 140px;
+    z-index: 1020;
+    float: right;
+    /* position: relative; */
+
+
+}
+
+#shopping_cart>a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.shopping_cart_span {
+    font-size: 6px;
+    text-align: center;
+}
+
+.cnt_product{
+    position: relative;
+    top: -70px;
+    right: -25px;
+    background-color:blue;
+    height: 15px;
+    width: 15px;
+    font-size: 3px;
+    font-weight: bolder;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+/* /詢價車 */
+/* 左側導覽 */
+
+#left_nav {
+
+    /* height: 1000px; */
+    /* background-color:yellowgreen; */
+}
+
+.nav_left_button {
+    /* text-align:center; */
+    /* display: block; */
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#nav_left_button_01:focus{
+    border-color: none;
+    outline: none;
+    box-shadow:none;
+    background-color: white;
+}
+#nav_left_button_01:not(.collapsed){
+    background-color: white;
+    color: #4a4a4a;
+}
+#nav_left_button_02:focus{
+    border-color: none;
+    outline: none;
+    box-shadow:none;
+    background-color: white;
+}
+#nav_left_button_02:not(.collapsed){
+    background-color: white;
+    color: #4a4a4a;
+}
+#nav_left_button_03:focus{
+    border-color: none;
+    outline: none;
+    box-shadow:none;
+    background-color: white;
+}
+#nav_left_button_03:not(.collapsed){
+    background-color: white;
+    color: #4a4a4a;
+}
+
+/* 左邊選單圖示 */
+.nav_left_button_1 {
+    background-image: url(https://www.creation.com.tw/images/product/icon01.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 20px;
+
+}
+
+.nav_left_button_2 {
+    background-image: url(https://www.creation.com.tw/images/product/icon02.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 20px;
+
+}
+
+.nav_left_button_3 {
+    background-image: url(https://www.creation.com.tw/images/product/icon04.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 20px;
+
+}
+
+/* /左邊選單圖示 */
+/* 圖示裡面文字樣式 */
+.nav_left_Culinary {
+    margin-left: 30px;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+.nav_left_Culinary .nav_left_list {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #4a4a4a;
+
+}
+
+#nav_left_button_01:focus {
+    background-color: white;
+    outline: none;
+    color: #4a4a4a;
+
+}
+
+
+
+/* /圖示裡面文字樣式 */
+
+
+
+
+
+/* 商品介紹內容 */
+.huma_div_out{
+    border-bottom: #d12229 solid 4px;
+    padding: 40px;
+    /* text-align: center; */
+}
+.humu_span_title{
+text-align: center;
+margin-bottom: 30px;
+
+
+}
+.huma_div_out>h1{
+    color:#4a4a4a;
+    font-weight: bolder;
+}
+.huma_button{
+    color: #d12229;
+    border: #d12229 3px solid;
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding:0 25px;
+}
+
+.humu_span_title{
+    font-size: 28px;
+    color: #d12229;
+    font-weight: bolder;    
+}
+
+.huma_button:hover{
+    color: white;
+    background-color: #d12229;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+
+.humu_span_content{
+    color: #4a4a4a;
+    text-align: start;
+    font-size: 18px;
+}
+
+.huma_table tr,
+.huma_table th,
+.huma_table td{
+    border: 1px solid #4a4a4a;
+}
+.huma_table{
+    margin: auto;
+    /* width: 70vw; */
+}
+
+
+
+
+
+/* /商品介紹內容 */
+
+
+
+/* /左側導覽 */
+
+/* 商品下方頁數*/
+
+
+/* /商品下方頁數*/
+
+
+/* 酒類警語 */
+
+#wine_danger {
+    height: 12vh;
+    width: 100%;
+    background-color: #4a4a4a;
+    position: sticky;
+    bottom: 0;
+    z-index: 90;
+}
+
+.wine_danger_p {
+    color: #bbbbbb;
+    text-align: center;
+    line-height: 12vh;
+}
+
+.wine_danger_p,
+.wine_danger_img {
+    height: 36px;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+    .wine_danger_p,
+    .wine_danger_img {
+        height: 28px;
+        font-size: 28px;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .wine_danger_p,
+    .wine_danger_img {
+        height: 23px;
+        font-size: 23px;
+    }
+  
+
+}
+@media screen and (max-width: 364px) {
+
+    
+
+}
+
+
+
+
+
+/* /酒類警語 */
+
+
+
+
+
+
+
+
+
+
+/* 頁尾 */
+#footer_up {
+    border-top: #d12229 solid 5px;
+
+}
+
+#footer_up>a {
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+
+}
+
+.icon_in_footer {
+    color: #d12229;
+    font-weight: bolder;
+    margin-right: 20px;
+
+
+}
+
+.footer_div {
+    margin: 0 10px;
+    margin-top: 30px;
+
+}
+
+.footer_span_ch {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer_span_en {
+    color: #4a4a4a;
+    font-size: 12px;
+}
+
+#footer_up i {
+    font-size: 35px;
+
+}
+
+/* 認證 */
+.footer_grey {
+    background-color: white;
+}
+
+/* /認證 */
+/* 認證下面那ㄍ */
+.footer_p {
+    color: #706d6d;
+    text-align: center;
+}
+
+.footer_span {
+    padding: 20px;
+}
+
+
+/* /頁尾 */
+
+/* RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */
+@media screen and (max-width: 991px) {
+
+    /* 輪播圖片 */
+    .products_Culinary_img {
+        padding-top: 101.8px;
+    }
+
+    .nav_list:hover:after {
+        transform: scaleX(0.2);
+
+    }
+
+    .nav_search {
+        margin: auto;
+    }
+
+    .input_search {
+        width: 70vw;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 894px) {
+
+    /* 頁尾連結 */
+    .footer_div {
+        width: 215px;
+        height: 42px;
+    }
+
+
+}
+
+@media screen and (max-width: 470px) {
+
+    #left_nav{
+        display: none;
+    }
+
+}
+
+
+/* /RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */

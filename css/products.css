@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #f1f1f2;
+}
+
+#navtop,
+#navtop_content,
+#nav_top_search,
+#navtop_list,
+.logo_div {
+    /* border: 1px solid red; */
+}
+
+
+/* vvv上面導覽vvv */
+#navtop {
+
+    background-color: white;
+    box-shadow: 0 1px 3px 1px #e2dddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px; */
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+#logo_img {
+    width: 200px;
+    
+}
+
+#navtop_content {
+   
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#navtop_list {
+    display: flex;
+
+
+
+}
+
+.out_navtoplist {
+
+    font-weight: bold;
+
+}
+
+#navtop_list>li:hover {
+    background-color: #e2dddd;
+
+
+}
+
+#navtop_list>li>a {
+    display: inline-block;
+    padding: 20px 20px 5px 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+
+/* 導覽下面紅字特效尚未完成 */
+/* 下面的 \A 表示為content中換行，\A後必須空一格再輸入，必須搭配white-space:pre; */
+/* .ab_us::after {
+
+    content: "\A ABOUT US";
+    white-space: pre;
+    font-size: 12px;
+    color: red;
+    border-bottom: 2px solid red;
+    
+
+} */
+.in_navtoplist {
+    color: red;
+    font-size: 8px;
+    font-weight: 1000;
+    border-bottom: red solid 2px;
+    visibility: hidden;
+    /* margin:auto auto; */
+}
+
+.out_navtoplist:hover>.in_navtoplist {
+    visibility: visible;
+}
+
+/* .in_navtoplist {
+    color: transparent;
+    border-bottom: 3px transparent solid;
+    font-size: 12px;
+} */
+
+/* .in_navtoplist:hover {
+    color: red;
+    border-bottom: 2px red solid;
+    line-height: 5px;
+} */
+
+#nav_top_search {
+    display: flex;
+    margin: auto 0;
+    /* margin-left: auto; */
+}
+
+.input_search,
+.btn_search {
+    border: none;
+    background-color: #e2dddd;
+    padding: 5px 10px;
+}
+
+.input_search:focus,
+.btn_search:focus {
+    outline: none;
+}
+
+.input_search {
+    border-radius: 20px 0 0 20px;
+    width: 120px;
+}
+
+.btn_search {
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+/* ^^^上面導覽列 */
+
+#culinary_pic{
+    width: 100%;
+    position: relative;
+    top: 89px;
+}

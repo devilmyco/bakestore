@@ -1,0 +1,212 @@
+body {
+
+    background-color: #f1f1f2;
+}
+
+/* 導覽區 */
+#navtop {
+
+    background-color: white;
+    box-shadow: 0 1px 3px 1px #e2dddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px;
+
+}
+
+/* 導覽文字連結 */
+.nav_list {
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+.out_navtoplist {
+    padding: 0 7px;
+}
+
+.in_navtoplist {
+    color: #d12229;
+    font-size: 16px;
+    font-weight: 1000;
+    /* border-bottom: red solid 2px; */
+    visibility: hidden;
+
+}
+
+.nav_list {
+    display: block;
+    padding: 20px 20px 5px 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.out_navtoplist:hover>.nav_list>.in_navtoplist {
+    visibility: visible;
+}
+
+/* ----------------按下去紅色線條動畫 */
+.nav_list {
+    margin: 0;
+    text-transform: uppercase;
+    /* 變大寫 */
+}
+
+.nav_list:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #d12229;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.nav_list:hover:after {
+    transform: scaleX(1);
+}
+
+/* <h1 class="fromCenter">Expand from center</h1 */
+/* -------------按下去紅色線條動畫 */
+
+/* 導覽logo */
+#img_logo {
+    width: 200px;
+}
+
+/* 搜尋區 */
+.input_search,
+.btn_search {
+    border: none;
+    background-color: #e2dddd;
+    padding: 5px 10px;
+}
+
+.input_search:focus,
+.btn_search:focus {
+    outline: none;
+}
+
+.input_search {
+    border-radius: 20px 0 0 20px;
+    width: 140px;
+}
+
+.btn_search {
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.nav_dropdown p{
+    text-align: center;
+}
+
+/* 搜尋區 */
+/* /導覽區 */
+
+
+
+
+
+
+/* 頁尾 */
+/* 頁尾 */
+#footer_up{
+    border-top: #d12229 solid 5px;
+
+}
+#footer_up>a {
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+
+}
+
+.icon_in_footer {
+    color: #d12229;
+    font-weight: bolder;
+    margin-right: 20px;
+
+
+}
+
+.footer_div {
+    margin: 0 10px;
+    margin-top: 30px;
+
+}
+
+.footer_span_ch {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer_span_en{
+    color: #4a4a4a;
+    font-size: 12px;
+}
+
+#footer_up i {
+    font-size: 35px;
+
+}
+/* 認證 */
+.footer_grey{
+    background-color: white;
+}
+/* /認證 */
+/* 認證下面那ㄍ */
+.footer_p{
+    color: #706d6d;
+    text-align: center;
+}
+.footer_span{
+    padding: 20px;
+}
+
+
+/* /頁尾 */
+
+/* RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */
+@media screen and (max-width: 991px) {
+
+    /* 輪播圖片 */
+    /* #carousel_frontpage {
+        padding-top: 101.8px;
+    } */
+
+    .nav_list:hover:after {
+        transform: scaleX(0.2);
+        
+    }
+    .nav_search{
+        margin: auto;
+    }
+    .input_search{
+        width: 400px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 894px) {
+
+    /* 頁尾連結 */
+    .footer_div {
+        width: 215px;
+        height: 42px;
+    }
+
+
+}
+
+
+/* /RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */

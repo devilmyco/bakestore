@@ -1,0 +1,340 @@
+body {
+
+    background-color: #f1f1f2;
+}
+
+/* 導覽區 */
+#navtop {
+
+    background-color: white;
+    box-shadow: 0 1px 3px 1px #e2dddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px;
+
+}
+
+/* 導覽文字連結 */
+.nav_list {
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+.out_navtoplist {
+    padding: 0 7px;
+}
+
+.in_navtoplist {
+    color: #d12229;
+    font-size: 16px;
+    font-weight: 1000;
+    /* border-bottom: red solid 2px; */
+    visibility: hidden;
+
+}
+
+.nav_list {
+    display: block;
+    padding: 20px 20px 5px 20px;
+    text-decoration: none;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.out_navtoplist:hover>.nav_list>.in_navtoplist {
+    visibility: visible;
+}
+
+/* ----------------按下去紅色線條動畫 */
+.nav_list {
+    margin: 0;
+    text-transform: uppercase;
+    /* 變大寫 */
+}
+
+.nav_list:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #d12229;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.nav_list:hover:after {
+    transform: scaleX(1);
+}
+
+/* <h1 class="fromCenter">Expand from center</h1 */
+/* -------------按下去紅色線條動畫 */
+
+/* 導覽logo */
+#img_logo {
+    width: 200px;
+}
+
+/* 搜尋區 */
+.input_search,
+.btn_search {
+    border: none;
+    background-color: #e2dddd;
+    padding: 5px 10px;
+}
+
+.input_search:focus,
+.btn_search:focus {
+    outline: none;
+}
+
+.input_search {
+    border-radius: 20px 0 0 20px;
+    width: 140px;
+}
+
+.btn_search {
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.nav_dropdown p{
+    text-align: center;
+}
+
+/* 搜尋區 */
+/* /導覽區 */
+
+/* 大圖片 */
+.products_Culinary_img{
+    width: 100vw;
+    padding-top: 122px;
+}
+/* /大圖片 */
+/* 詢價車 */
+/* #shopping_cart{
+    font-size: 40px;
+    background-color:#d12229;
+    color: white;
+    position: sticky;
+    top: 140px;
+    z-index: 1020;
+    float: right;
+   
+    
+}
+#shopping_cart>a{
+    text-decoration: none;
+    color: white;
+
+}
+.shopping_cart_span{
+    font-size: 6px;
+    text-align: center;
+}
+ */
+
+
+/* /詢價車 */
+/* 詢價清單 */
+.shopping_list_div{
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+}
+.shopping_list_div>h2{
+    border-bottom: #d12229 3px solid;
+    color: #d12229;
+    padding-bottom: 20px;
+
+}
+.shopping_list_table_tr th{
+    border-bottom: #d12229 solid 2px;
+    color: #4a4a4a;
+    font-weight: bolder;
+    
+}
+.shopping_list_table{
+    width: 80vw;
+    /* text-align: center; */
+}
+.shopping_list_img{
+    width: 200px;
+}
+/* .delete{
+    border-radius: 10px;
+    border:#d12229 solid 2px;
+    color:#d12229;
+}
+.delete:hover{
+    
+} */
+
+
+
+/* /詢價清單 */
+/* 詢價資料填寫 */
+.send_imformation{
+    width: 80vw;
+}
+#send_imformation>h3{
+    margin-top: 30px;
+    color: #d12229;
+    font-weight: bolder;
+}
+.send_imformation_list{
+    width: 160px;
+    text-align: end;
+    font-weight: bolder;
+    color: #4a4a4a;
+    margin-right: 30px;
+}
+.send_imformation_input{
+    width: 60vw;
+}
+#send_imformation textarea{
+    width: 60vw;
+    height: 150px;
+    
+}
+#send_imformation textarea:focus{
+outline: none;
+}
+
+.send_imformation_input:focus{
+    outline:none;
+}
+.send_imformation_div{
+    margin: 20px 0;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.send_imformation_select{
+    width: 60vw;
+    height: 30px;
+    color: #4a4a4a;
+}
+
+.send_imformation_select:focus{
+    outline:1px #4a4a4a solid ;
+}
+
+
+
+
+
+/* /詢價資料填寫 */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 頁尾 */
+#footer_up{
+    border-top: #d12229 solid 5px;
+
+}
+#footer_up>a {
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+
+}
+
+.icon_in_footer {
+    color: #d12229;
+    font-weight: bolder;
+    margin-right: 20px;
+
+
+}
+
+.footer_div {
+    margin: 0 10px;
+    margin-top: 30px;
+
+}
+
+.footer_span_ch {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer_span_en{
+    color: #4a4a4a;
+    font-size: 12px;
+}
+
+#footer_up i {
+    font-size: 35px;
+
+}
+/* 認證 */
+.footer_grey{
+    background-color: white;
+}
+/* /認證 */
+/* 認證下面那ㄍ */
+.footer_p{
+    color: #706d6d;
+    text-align: center;
+}
+.footer_span{
+    padding: 20px;
+}
+
+
+/* /頁尾 */
+
+/* RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */
+@media screen and (max-width: 991px) {
+
+    /* 輪播圖片 */
+    .products_Culinary_img {
+        padding-top: 101.8px;
+    }
+
+    .nav_list:hover:after {
+        transform: scaleX(0.2);
+        
+    }
+    .nav_search{
+        margin: auto;
+    }
+    .input_search{
+        width: 70vw;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 894px) {
+
+    /* 頁尾連結 */
+    .footer_div {
+        width: 215px;
+        height: 42px;
+    }
+
+
+}
+
+
+/* /RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD--RWD-- */

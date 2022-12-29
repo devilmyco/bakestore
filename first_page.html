@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- VVV圖示icon的CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- bs-css -->
+    <link rel="stylesheet" href="./bs_css/bootstrap.css">
+    <!-- bs-js -->
+    <script src="./bs_js/bootstrap.bundle.js"></script>
+    <!-- 自己的CSS -->
+    <link rel="stylesheet" href="./css/first_page.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " id="navtop">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img id="img_logo" src="./img/all_page/logo_with_name2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 navtoplist">
+
+                    <li class="nav-item dropdown out_navtoplist">
+                        <!-- a裡面加dropdown-toggle 還原一個向下箭頭的特效可能吧，也許還有其他功能...-->
+                        <a class="nav-link nav_list" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            關於我們
+                            <br>
+                            <span class="in_navtoplist">ABOUT US</span>
+                        </a>
+                        <ul class="dropdown-menu nav_dropdown">
+                            <!-- 有空再用圖片 -->
+                            <!-- <li>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex">
+                                        <div class="">
+                                            <img src="./img/fontpage/nav/food_logo006.jpg" alt="">
+                                        </div>
+                                        <div class="">
+                                            <p> 專業團隊 | Teams</p>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> -->
+                            <li><a class="dropdown-item" href="#">專業團隊 | Teams</a></li>
+                            <li><a class="dropdown-item" href="#">品質認證 | Quality</a></li>
+                            <li><a class="dropdown-item" href="#">公司沿革 | Histiry</a></li>
+                            <li><a class="dropdown-item" href="#">獲獎與肯定 | Hanours and Awards</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown out_navtoplist">
+                        <a class="nav-link nav_list" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            商品總覽
+                            <br>
+                            <span class="in_navtoplist">PRODUCT</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./products_Culinary.html">料理類 | Culinary</a></li>
+                            <li><a class="dropdown-item" href="./products_Culinary.html">烘焙類 | Pastry & Bakery</a></li>
+                            <li><a class="dropdown-item" href="./products_Culinary.html">咖啡類 | Coffee</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown out_navtoplist">
+                        <a class="nav-link nav_list" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            品牌總覽
+                            <br>
+                            <span class="in_navtoplist">BRAND</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">食品類 | Food & Bevergae</a></li>
+                            <li><a class="dropdown-item" href="#">酒品類 | Wine & Sake</a></li>
+                            
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown out_navtoplist">
+                        <a class="nav-link nav_list" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            食譜分享
+                            <br>
+                            <span class="in_navtoplist">RECIPES</span>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">料理類 | Culinary</a></li>
+                            <li><a class="dropdown-item" href="#">烘焙類 | Pastry & Bakery</a></li>
+                            <li><a class="dropdown-item" href="#">飲品類 | Beverage</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item out_navtoplist">
+                        <a class="nav-link active nav_list" aria-current="page" href="./service.html">聯絡我們 <br>
+                            <span class="in_navtoplist">SERVICE</span></a>
+                      </li>
+                    <!-- <li class="nav-item dropdown out_navtoplist">
+                        <a class="nav-link nav_list" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            聯絡我們
+                            <br>
+                            <span class="in_navtoplist">SERVICE</span>
+                        </a>
+                        
+                    </li> -->
+
+                </ul>
+                <form class="d-flex justify-content-center" role="search">
+                    <!-- -----bs -->
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    <!-- -----bs -->
+                    <!-- ===my -->
+                    <input type="search" placeholder="請輸入商品" class="input_search">
+                    <button class="btn_search " type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <!-- ===my -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 輪播圖 -->
+    <div id="carousel_frontpage" class="carousel slide" data-bs-ride="carousel" data-bs-ride="true"
+        data-bs-interval="3500">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel_frontpage" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel_frontpage" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel_frontpage" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 carousel-img" src="./img/fontpage/font_page_img001.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="./img/fontpage/font_page_img002.jpg" alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="./img/fontpage/font_page_img003.jpg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_frontpage" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel_frontpage" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+        <!-- 詢價車 -->
+        <div id="shopping_cart" class="d-flex">
+            <a class="d-block" href="./shopping_cart_content.html">
+                <div><i class="bi bi-cart4"></i></div>
+                <span class="shopping_cart_span d-block">詢價車</span>
+                <div id="cnt_product_num" class="cnt_product">0</div>
+            </a>
+        </div>
+    
+        <!-- /詢價車 -->
+
+    <!-- 下面文字等等 -->
+    <br><br><br>
+    <p class="main_slogan">任選所想，全方位滿足您的業務需求</p>
+    <br><br><br>
+
+    <!-- 下面是卡片 -->
+
+    <div class="main_card_div">
+        <div class="main_card">
+            <a href="./products_Culinary.html">
+                <div class="main_card_top">
+                    <img src="./img/fontpage/card01.jpg" alt="">
+                </div>
+                <div class="main_card_botton">
+                    <i class="bi bi-fire card_i_top"></i>
+                    <h4>開始使用好食材</h4>
+                    <p>看看主廚們的口袋名單，專家精選的美味食力。</p>
+                    <i class="bi bi-arrow-right-circle-fill card_i_bottom"></i>
+                </div>
+            </a>
+        </div>
+        <div class="main_card">
+            <a id="main_card_a" href="./products_Culinary.html">
+                <div class="main_card_top">
+                    <img src="./img/fontpage/card02.jpg" alt="">
+                </div>
+                <div class="main_card_botton">
+                    <i class="bi bi-search-heart-fill card_i_top"></i>
+                    <h4>開始選好品牌</h4>
+                    <p>我們走訪世界，將優質的美味品牌送到您面前。</p>
+                    <i class="bi bi-arrow-right-circle-fill card_i_bottom"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="main_card">
+            <a href="#">
+                <div class="main_card_top">
+                    <img src="./img/fontpage/card03.jpg" alt="">
+                </div>
+                <div class="main_card_botton">
+                    <i class="bi bi-file-text-fill card_i_top"></i>
+                    <h4>開始有好靈感</h4>
+                    <p>一起探索美味的無限可能，讓菜單跟著想像活起來。</p>
+                    <i class="bi bi-arrow-right-circle-fill card_i_bottom"></i>
+                </div>
+            </a>
+        </div>
+        <div class="main_card main_card-4">
+            <a href="./service.html">
+                <div class="main_card_top">
+                    <img src="./img/fontpage/card04.jpg" alt="">
+                </div>
+                <div class="main_card_botton">
+                    <i class="bi bi-house-heart-fill card_i_top"></i>
+                    <h4>開始用好服務</h4>
+                    <p>供應與服務就在身邊，做您開創美味事業的專業夥伴。</p>
+                    <i class="bi bi-arrow-right-circle-fill card_i_bottom"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- /卡片 -->
+    <!-- 下面是公益圖 -->
+    <br><br><br><br><br>
+    <div class="for_love_out">
+        <div class="for_love">
+            <div class="content_for_love">
+                <div><i class="bi bi-balloon-heart"></i></div>
+                <div class="love_text_solgan">
+                    <p>簡單傳愛，讓孩子</p>
+                    <p>幸福起來</p>
+
+                </div>
+                <div>
+                    <p class="love_text">
+                        自2009年起，透過捐鮮奶獻愛心公益活動，匯聚眾人的力量，我們募集超過了260,000瓶鮮奶。遍佈全台22個縣市，500所偏鄉學校，幫助9,000位以上的學童，帶著開元與群眾的祝福，希望他們健康長大。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="img_for_love">
+            <img src="img/fontpage/img_for_love001.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- ^^^^^上面是公益圖 -->
+    <br><br><br><br>
+
+    <!-- 頁尾 -->
+    <!-- 連結區 -->
+
+    <div id="footer_up" class="d-flex justify-content-center flex-wrap">
+        <a href="tel:0800-020-368">
+            <div class="d-flex footer_div">
+                <div><i class="icon_in_footer bi bi-telephone"></i></div>
+                <div><span class="footer_span_ch">立即撥打客服專線</span><br><span class="footer_span_ch">0800-020-368</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.creation.com.tw/tw/about/p4.php">
+            <div class="d-flex footer_div">
+                <div><i class="icon_in_footer bi bi-link-45deg"></i></div>
+                <div><span class="footer_span_ch">友好連結</span><br><span class="footer_span_en">Link</span></div>
+            </div>
+        </a>
+        <a href="https://www.facebook.com/creationfood">
+            <div class="d-flex footer_div">
+                <div><i class="icon_in_footer bi bi-facebook"></i></div>
+                <div><span class="footer_span_ch">元元官方粉絲頁</span><br><span class="footer_span_en">Creation Food</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://page.line.me/?accountId=kpa9925w">
+            <div class="d-flex footer_div">
+                <div><i class="icon_in_footer bi bi-line"></i></div>
+                <div><span class="footer_span_ch">Line官方帳號</span><br><span class="footer_span_en">Creation Line</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UC4IVoAIjfDKGV6U8LEohfrw">
+            <div class="d-flex footer_div">
+                <div><i class="icon_in_footer bi bi-youtube"></i></div>
+                <div><span class="footer_span_ch">元元影片頻道</span><br><span class="footer_span_en">YouTube</span></div>
+            </div>
+        </a>
+    </div>
+    <!-- 連結區 -->
+    <!-- 認證區 -->
+    <hr>
+    <div class="footer_grey d-flex justify-content-evenly flex-wrap ">
+        <div><img src="./img/fontpage/grey-haccp.png" alt=""></div>
+        <div><img src="./img/fontpage/grey-iso-22000.png" alt=""></div>
+        <div><img src="./img/fontpage/grey-iso-9001.png" alt=""></div>
+        <div><img src="./img/fontpage/grey-fssc.png" alt=""></div>
+    </div>
+    <hr>
+    <!-- /認證區 -->
+
+    <p class="footer_p">素材取材自開元食品官網<span class="footer_span">|</span>https://www.creation.com.tw/</p>
+    <!-- /頁尾 -->
+
+
+
+
+</body>
+
+</html>
